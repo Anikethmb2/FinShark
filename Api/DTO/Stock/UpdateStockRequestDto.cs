@@ -2,13 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Api.DTO.Comment;
+
 namespace Api.DTO.Stock
 {
-    public class StockDto
+    public class UpdateStockRequestDto
     {
-        
-        public int Id { get; set; }
         public string Symbol { get; set; } = string.Empty;
         public string CompanyName { get; set; } = string.Empty;
 
@@ -18,8 +16,5 @@ namespace Api.DTO.Stock
 
         public string Industry { get; set; } = string.Empty;
         public long Market { get; set; } 
-
-        public required List<CommentDto> Comments { get; set; }
-
     }
 }
